@@ -1,0 +1,38 @@
+export const mapResponseJsonToOrders = (responseJson) => {
+  return responseJson.map((data) => ({
+    id: data?.id,
+    userId: data?.managed_by?.user_id,
+    createdBy: data?.managed_by?.user_corporate_email,
+    customerId: Number(data?.customer?.id),
+    customerCountry: data?.customer?.country,
+    customerDni: data?.customer?.dni,
+    customerFirstName: data?.customer?.name,
+    customerLastName: data?.customer?.last_name,
+    customerAccountName: data?.customer?.account_name,
+    customerAccountCode: data?.customer?.identification_code,
+    customerAmount: data?.customer?.amount,
+    customerPayment: data?.customer?.payment,
+    customerReceipt: data?.customer?.receipt,
+    rateId: Number(data?.rate?.id),
+    specialRate: Number(data?.rate?.special_rate),
+    rateType: data?.rate?.type,
+    rateCustomerCurrency: data?.rate?.customer_currency,
+    rateBusinessCurrency: data?.rate?.business_currency,
+    rateAmount: Number(data?.rate?.amount),
+    accountId: data?.account?.id
+      ? Number(data?.account?.id)
+      : data?.account?.id,
+    accountCode: data?.account?.identification_code,
+    accountName: data?.account?.name,
+    accountDescription: data?.account?.description,
+    accountType: data?.account?.type,
+    totalPayment: Number(data?.total_payment),
+    amountPayable: Number(data?.amount_payable),
+    description: data?.description,
+    status: data?.status,
+    disable: Number(data?.disable),
+    createdAt: data?.created_at,
+    updatedAt: data?.updated_at,
+    closingAt: data?.operation_closing,
+  }));
+};

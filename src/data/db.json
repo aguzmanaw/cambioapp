@@ -1,0 +1,266 @@
+{
+    "operations": [
+        {
+            "id": 1,
+            "user_id": 1,
+            "user_corporate_email": "root@arcambio.com",
+            "customer_id": 1,
+            "customer_country": "Venezuela",
+            "customer_dni": "12345678",
+            "customer_name": "Juan",
+            "customer_last_name": "Arango",
+            "customer_account_name": "Banco NUEVO",
+            "customer_identification_code": "54123487845",
+            "customer_amount": 10,
+            "customer_receipt": "Comprobante",
+            "customer_payment": 1,
+            "rate_id": 5,
+            "special_rate": 1,
+            "rate_type": "venta",
+            "rate_customer_currency": "Bs",
+            "rate_business_currency": "Dolar pzo",
+            "rate_amount": 2,
+            "account_id": 1,
+            "total_payment": 20,
+            "amount_payable": 0,
+            "description": "Ya pagamos, falta cliente",
+            "status": "cerrada",
+            "disable": 0,
+            "created_at": "2023-08-18 18:09:53",
+            "updated_at": "2023-08-18 18:23:53",
+            "operation_closing": "2023-08-18 18:23:53"
+        },
+        {
+            "id": 2,
+            "user_id": 1,
+            "user_corporate_email": "root@arcambio.com",
+            "customer_id": 1,
+            "customer_country": "Venezuela",
+            "customer_dni": "12345678",
+            "customer_name": "Pedro",
+            "customer_last_name": "Perez",
+            "customer_account_name": "Banco NUEVO",
+            "customer_identification_code": "54123487845",
+            "customer_amount": 10,
+            "customer_receipt": "Comprobante",
+            "customer_payment": 1,
+            "rate_id": 1,
+            "special_rate": 1,
+            "rate_type": "venta",
+            "rate_customer_currency": "USDT",
+            "rate_business_currency": "Dolar pzo",
+            "rate_amount": 1.9,
+            "account_id": 1,
+            "total_payment": 19,
+            "amount_payable": 0,
+            "description": "Ya pagamos, falta cliente",
+            "status": "abierta",
+            "disable": 0,
+            "created_at": "2023-08-18 18:09:53",
+            "updated_at": "2023-08-18 18:23:53",
+            "operation_closing": "2023-08-18 18:23:53"
+        },
+        {
+            "id": 3,
+            "user_id": 2,
+            "user_corporate_email": "root@arcambio.com",
+            "customer_id": 1,
+            "customer_country": "Venezuela",
+            "customer_dni": "12345678",
+            "customer_name": "Juan",
+            "customer_last_name": "Taborda",
+            "customer_account_name": "Banco NUEVO",
+            "customer_identification_code": "54123487845",
+            "customer_amount": 10,
+            "customer_receipt": "Comprobante",
+            "customer_payment": 1,
+            "rate_id": 1,
+            "special_rate": 1,
+            "rate_type": "venta",
+            "rate_customer_currency": "ARG",
+            "rate_business_currency": "Dolar pzo",
+            "rate_amount": 1.9,
+            "account_id": 1,
+            "total_payment": 19,
+            "amount_payable": 0,
+            "description": "Ya pagamos, falta cliente",
+            "status": "por_cobrar",
+            "disable": 1,
+            "created_at": "2023-08-18 18:09:53",
+            "updated_at": "2023-08-18 18:23:53",
+            "operation_closing": "2023-08-18 18:23:53"
+        }
+    ],
+    "rates": [
+        {
+            "id": 6,
+            "exchange": {
+                "id": 5,
+                "type": "venta",
+                "customer_currency": "WEUR",
+                "business_currency": "ARG",
+                "recurrent": 0
+            },
+            "amount": 150,
+            "created_by": "elmessias@arcambio.com",
+            "created_at": "2023-08-07T12:15:13.000000Z",
+            "updated_at": "2023-08-07T12:15:13.000000Z"
+        },
+        {
+            "id": 5,
+            "exchange": {
+                "id": 2,
+                "type": "venta",
+                "customer_currency": "Bs",
+                "business_currency": "Dolar pzo",
+                "recurrent": 1
+            },
+            "amount": 20,
+            "created_by": "root@arcambio.com",
+            "created_at": "2023-08-07T12:15:13.000000Z",
+            "updated_at": "2023-08-07T12:15:13.000000Z"
+        },
+        {
+            "id": 4,
+            "exchange": {
+                "id": 6,
+                "type": "remesa",
+                "customer_currency": "EUR",
+                "business_currency": "BRL",
+                "recurrent": 0
+            },
+            "amount": 5.5,
+            "created_by": "root@arcambio.com",
+            "created_at": "2023-08-07T12:15:13.000000Z",
+            "updated_at": "2023-08-07T12:15:13.000000Z"
+        },
+        {
+            "id": 3,
+            "exchange": {
+                "id": 1,
+                "type": "compra",
+                "customer_currency": "USD",
+                "business_currency": "Dolar m",
+                "recurrent": 1
+            },
+            "amount": 150,
+            "created_by": "elmessias@arcambio.com",
+            "created_at": "2023-08-07T12:15:13.000000Z",
+            "updated_at": "2023-08-07T12:15:13.000000Z"
+        },
+        {
+            "id": 2,
+            "exchange": {
+                "id": 4,
+                "type": "compra",
+                "customer_currency": "BRL",
+                "business_currency": "Dolar pzo",
+                "recurrent": 0
+            },
+            "amount": 200,
+            "created_by": "root@arcambio.com",
+            "created_at": "2023-08-07T12:15:13.000000Z",
+            "updated_at": "2023-08-07T12:15:13.000000Z"
+        },
+        {
+            "id": 1,
+            "exchange": {
+                "id": 3,
+                "type": "remesa",
+                "customer_currency": "Dolar m",
+                "business_currency": "Dolar pzo",
+                "recurrent": 1
+            },
+            "amount": 100,
+            "created_by": "root@arcambio.com",
+            "created_at": "2023-08-07T12:15:13.000000Z",
+            "updated_at": "2023-08-07T12:15:13.000000Z"
+        }
+    ],
+    "exchanges": [
+        {
+            "id": 1,
+            "type": "compra",
+            "customer_currency": "USD",
+            "business_currency": "Dolar m",
+            "recurrent": 1
+        },
+        {
+            "id": 2,
+            "type": "venta",
+            "customer_currency": "Bs",
+            "business_currency": "Dolar pzo",
+            "recurrent": 1
+        },
+        {
+            "id": 3,
+            "type": "remesa",
+            "customer_currency": "Dolar m",
+            "business_currency": "Dolar pzo",
+            "recurrent": 1
+        },
+        {
+            "id": 7,
+            "type": "compra",
+            "customer_currency": "ARG",
+            "business_currency": "Bs",
+            "recurrent": 1
+        },
+        {
+            "id": 8,
+            "type": "venta",
+            "customer_currency": "WEUR",
+            "business_currency": "Dolar pzo",
+            "recurrent": 1
+        },
+        {
+            "id": 9,
+            "type": "remesa",
+            "customer_currency": "EUR",
+            "business_currency": "ARG",
+            "recurrent": 1
+        },
+        {
+            "id": 4,
+            "type": "compra",
+            "customer_currency": "BRL",
+            "business_currency": "Dolar pzo",
+            "recurrent": 0
+        },
+        {
+            "id": 5,
+            "type": "venta",
+            "customer_currency": "WEUR",
+            "business_currency": "ARG",
+            "recurrent": 0
+        },
+        {
+            "id": 6,
+            "type": "remesa",
+            "customer_currency": "EUR",
+            "business_currency": "BRL",
+            "recurrent": 0
+        },
+        {
+            "id": 10,
+            "type": "compra",
+            "customer_currency": "Bs",
+            "business_currency": "WEUR",
+            "recurrent": 0
+        },
+        {
+            "id": 11,
+            "type": "venta",
+            "customer_currency": "Bs",
+            "business_currency": "USD",
+            "recurrent": 0
+        },
+        {
+            "id": 12,
+            "type": "remesa",
+            "customer_currency": "ARG",
+            "business_currency": "Brasil Transf",
+            "recurrent": 0
+        }
+    ]
+}

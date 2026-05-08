@@ -1,0 +1,14 @@
+import { removeEmpty } from "./removeEmpty";
+
+export const mapPaymentsToRequestJson = (payments) => {
+  return payments.map((data) => {
+    const row = {
+      id: isNaN(data?.id) ? undefined : parseInt(data?.id),
+      account_id: isNaN(data?.accountId) ? undefined : parseInt(data?.accountId),
+      operation_id: isNaN(data?.orderId) ? undefined : parseInt(data?.orderId),
+      amount: isNaN(data?.amount) ? undefined : parseFloat(data?.amount),
+      receipt: data?.receipt
+    }
+    return removeEmpty(row);
+  });
+};
